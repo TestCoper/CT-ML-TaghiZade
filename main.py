@@ -2,7 +2,7 @@ import os
 import random
 import zipfile
 import numpy as np
-from . import utils
+from util import utils
 import tensorflow as tf
 from scipy import ndimage
 from tensorflow import keras

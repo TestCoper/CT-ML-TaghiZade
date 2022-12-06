@@ -45,6 +45,4 @@ def read_and_process(path):
     file = read_file(path)
     file = normailze_volume(file)
     file = resize_volume(file)
-    return file
-
-
+    return file	
