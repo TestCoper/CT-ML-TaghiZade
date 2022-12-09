@@ -18,7 +18,7 @@ AbnormalScans = [
     os.path.join(os.getcwd(), "./CT-23", x)
     for x in os.listdir("./CT-23")
 ]
-print(PerTrVal)
+
 
 
 
@@ -39,6 +39,7 @@ y_train = np.concatenate((ab_normal_labels[:80], normal_labels[:80]), axis=0)
 x_val = np.concatenate((ab_normal_scans[80:], normal_scans[80:]), axis=0)
 y_val = np.concatenate((ab_normal_labels[80:], normal_labels[80:]), axis=0)
 PerTrVal = "Number of samples in train and validation are {} and {}.".format(x_train.shape[0], x_val.shape[0])
+print(PerTrVal)
 
 @tf.function
 def rotate(ctimg):
